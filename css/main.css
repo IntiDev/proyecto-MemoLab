@@ -1,0 +1,45 @@
+body {
+  background-color: lightgrey;
+}
+
+hr {
+  border: 2px solid black;
+}
+
+div {
+  background-image: url("../assets/img/logo-lab.png");
+  /*background-position:center;*/
+  background-size: cover;
+}
+
+.card {
+  border: 2px solid black;
+  float: left;
+  height: 200px;
+  margin: 4% 6%;
+  width: 20%;
+}
+
+.card-1:hover {
+  background-image: url("../assets/img/cabin.png");
+  background-position: center;
+}
+
+.card-2:hover {
+  background-image: url("../assets/img/cake.png");
+  background-position: center;
+}
+
+.card-3:hover {
+  background-image: url("../assets/img/circus.png");
+  background-position: center;
+}
+
+.card-4:hover {
+  background-image: url("../assets/img/game.png");
+  background-position: center;
+}
+
+.comodin:hover {
+  background-image: url(https://image.freepik.com/free-vector/colorful-mandala-with-floral-shapes_1159-549.jpg);
+}
