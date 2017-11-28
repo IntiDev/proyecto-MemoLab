@@ -6,7 +6,7 @@ hr {
   border: 2px solid black;
 }
 
-div.card { /*se cambia div por div.card*/
+div { /*se cambia div por div.card*/
   background-image: url("../assets/img/logo-lab.png");
   background-size: cover;
 }
@@ -21,18 +21,22 @@ div.card { /*se cambia div por div.card*/
 .rotation-efect {
   transform: rotateY(180deg);
 }
-
+/**/
 .card {
   border: 2px solid black;
   float: left;
   height: 200px;
   margin: 4% 6%;
   width: 20%;
+  /*transform-style: preserve-3d;
+  transition: 2s;*/
+  /*transform: rotateY(180deg);*/
 }
 
 .card-1:hover {
   background-image: url("../assets/img/cabin.png");
   background-position: center;
+  /*transform: rotateY(180deg);*/
   /*transform: rotateY(180deg);/*Se agrega propiedad para la rotacion
   la sacamos a una NUEVA CLASE*/
 }
