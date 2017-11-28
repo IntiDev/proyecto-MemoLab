@@ -10,5 +10,11 @@ for ( var i = 0; i < arrayCardsSize; i++ ) {
 
 function rotation() {
   // console.log(this);
-    this.classList.add('rotation-efect');
+    this.classList.add('rotation-efect'); 
+    // if ( this.classList.contains('rotation-efect') ) {
+    //   this.classList.remove('rotation-efect');
+    // }
+    // else {
+    //   this.classList.add('rotation-efect');
+    // }
 }
