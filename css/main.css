@@ -11,21 +11,30 @@ div.card { /*se cambia div por div.card*/
   background-size: cover;
 }
 
+/* CLASE NUEVA se quita de .card para crear una nueva*/
+.efects {
+  /*Se agregan las siguientes propiedades para lograr efecto de rotacion*/
+  transform-style: preserve-3d;
+  transition: 2s;
+}
+
+.rotation-efect {
+  transform: rotateY(180deg);
+}
+
 .card {
   border: 2px solid black;
   float: left;
   height: 200px;
   margin: 4% 6%;
   width: 20%;
-  /*Se agregan las siguientes propiedades para lograr efecto de rotacion*/
-  transform-style: preserve-3d;
-  transition: 2s;
 }
 
 .card-1:hover {
   background-image: url("../assets/img/cabin.png");
   background-position: center;
-  transform: rotateY(180deg);/*Se agrega propiedad para la rotacion*/
+  /*transform: rotateY(180deg);/*Se agrega propiedad para la rotacion
+  la sacamos a una NUEVA CLASE*/
 }
 
 .card-2:hover {
