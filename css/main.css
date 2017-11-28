@@ -6,9 +6,8 @@ hr {
   border: 2px solid black;
 }
 
-div.card { /*se cambia div por div .front*/
+div.card { /*se cambia div por div.card*/
   background-image: url("../assets/img/logo-lab.png");
-  /*background-position:center;*/
   background-size: cover;
 }
 
@@ -18,8 +17,7 @@ div.card { /*se cambia div por div .front*/
   height: 200px;
   margin: 4% 6%;
   width: 20%;
-  /*Se agregan las siguientes propiedades*/
-  /*position: relative;*/
+  /*Se agregan las siguientes propiedades para lograr efecto de rotacion*/
   transform-style: preserve-3d;
   transition: 2s;
 }
@@ -29,7 +27,7 @@ div.card { /*se cambia div por div .front*/
   background-position: center;
   transform: rotateY(180deg);/*Se agrega propiedad para la rotacion*/
 }
-/**/
+
 .card-2:hover {
   background-image: url("../assets/img/cake.png");
   background-position: center;
@@ -47,40 +45,4 @@ div.card { /*se cambia div por div .front*/
 
 .comodin:hover {
   background-image: url(https://image.freepik.com/free-vector/colorful-mandala-with-floral-shapes_1159-549.jpg);
-}
-
-/*Se agregan las nuevas clases para los cambios del HTML*/
-.contenedor {
-  height: 250px;
-  width: 250px;
-  /*margin: auto;*/
-  -webkit-perspective: 700px;
-}
-
-/*.carta {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: 2s;
-}
-
-.carta:hover {
-  transform: rotateY(180deg);
-}*/
-
-.face{
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  position: absolute;
-}
-
-.front {
-  background-color: black;
-}
-
-.back {
-  /*background-color: green;*/
-  transform: rotateY(180deg);
 }
