@@ -33,7 +33,7 @@ div { /*se cambia div por div.card*/
   /*transform: rotateY(180deg);*/
 }
 
-.card-1[selected=true] {
+.card-1[selected=true] {/*notacion para seleccionar algun atributo select -> selected(atributo) JS & CSS*/
   background-image: url("../assets/img/cabin.png");
   background-position: center;
   /*transform: rotateY(180deg);*/
