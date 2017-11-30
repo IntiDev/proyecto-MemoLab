@@ -33,7 +33,7 @@ div { /*se cambia div por div.card*/
   /*transform: rotateY(180deg);*/
 }
 
-.card-1:hover {
+.card-1[seleccionado=true] {
   background-image: url("../assets/img/cabin.png");
   background-position: center;
   /*transform: rotateY(180deg);*/
@@ -41,21 +41,21 @@ div { /*se cambia div por div.card*/
   la sacamos a una NUEVA CLASE*/
 }
 
-.card-2:hover {
+.card-2[seleccionado=true] {
   background-image: url("../assets/img/cake.png");
   background-position: center;
 }
 
-.card-3:hover {
+.card-3[seleccionado=true] {
   background-image: url("../assets/img/circus.png");
   background-position: center;
 }
 
-.card-4:hover {
+.card-4[seleccionado=true] {
   background-image: url("../assets/img/game.png");
   background-position: center;
 }
 
-.comodin:hover {
+.comodin[seleccionado=true] {
   background-image: url(https://image.freepik.com/free-vector/colorful-mandala-with-floral-shapes_1159-549.jpg);
 }
