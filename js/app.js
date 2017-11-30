@@ -66,7 +66,12 @@ function rotation() {
             if(++pairs == 4) {
               // Agregamos una pausa para que se pueda ver la animacion
               setTimeout(function() {
-                alert("Has ganado!");
+                var response = confirm("You win!\n Do u wanna play again?");
+                if(response) {
+                  restart();
+                } else {
+                  alert("Ok :(");
+                }
               }, 1000);
             }
           } else {
@@ -97,5 +102,12 @@ function hasEqualClasses(firstElement, secondElement) {
     return firstElementClasses.every(function(value, iterator) { return value == secondElementClasses[iterator]})
   } else {
     return false;
+  }
+}
+
+function restart() {
+  for(var i = 0; i < arrayCardsSize; i++) {
+    cards[i].classList.remove("disabled");
+    cards[i].setAttribute("selected", false);
   }
 }
