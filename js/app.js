@@ -28,13 +28,11 @@ for ( var i = 0; i < arrayCardsSize; i++ ) {
 }
 
 function rotation() {
-  this.setAttribute("seleccionado", !(this.getAttribute("seleccionado") === "true"));
-  // console.log(this);
-    //this.classList.add('rotation-efect');
-    if ( this.classList.contains('rotation-efect') ) {
-      this.classList.remove('rotation-efect');
-    }
-    else {
-      this.classList.add('rotation-efect');
-    }
+  this.setAttribute("selected", !(this.getAttribute("selected") === "true"));
+  if ( this.classList.contains('rotation-efect') ) {
+    this.classList.remove('rotation-efect');
+  }
+  else {
+    this.classList.add('rotation-efect');
+  }
 }
